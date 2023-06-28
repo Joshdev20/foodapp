@@ -1,0 +1,438 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="food.css">
+    <style>
+        li::first-letter {
+            color: red;
+        }
+
+        .food_items {
+            width: 100%;
+            height: fit-content;
+            padding: 0;
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgb(109, 58, 17);
+            color: rgb(239, 212, 212);
+            box-shadow: 0px 0px 6px 0px rgba(86, 81, 81, 0.489);
+            flex-grow: 1;
+            aspect-ratio: 1/1;
+        }
+
+        .food_items img {
+            width: 100%;
+            /* height:auto; */
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .food_items p {
+            text-align: left;
+            text-indent: 10px;
+        }
+
+        .food_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* place-content:center; */
+            grid-gap: 10px;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin: 30px 10px;
+        }
+
+        @media (max-width:800px) {
+            ul,
+            [type="search"] {
+                display: none;
+            }
+
+            #hamburger {
+                display: block;
+                visibility: visible;
+            }
+
+            .food_items {
+                background-color: #9b480d;
+                color: #fff;
+                font-size: 17px;
+                font-weight: bolder;
+                border-radius: 10px;
+            }
+
+            marquee div * {
+                border-radius: 100%;
+            }
+
+            marquee div img {
+                border-radius: 100%;
+                border: 4px solid #9b480b;
+                width: 100px;
+                height: 100px;
+            }
+
+            .describe {
+                /* position: absolute;
+                left: 30px;
+                font-size: x-small;
+                right: -105px;
+                top: 65px;
+                padding: 0;
+                z-index: 1; */
+                display: none;
+            }
+
+            a {
+                padding: 5px 5px;
+            }
+
+            li>a:hover {
+                border-left: 3px solid #9b480b;
+                margin: 0px 5px;
+            }
+
+            #hamburger {
+                display: block;
+            }
+
+            .navmenu {
+                position: absolute;
+                right: 0;
+                background-color: #fff;
+                z-index: 1;
+            }
+
+            .navmenu:hover>#hamburger {
+                font-size: 40px;
+                color: black;
+            }
+
+            .navmenu:hover>ul * {
+                display: block;
+                margin: 10px 0;
+                text-align: left;
+                background: transparent;
+            }
+
+            .navmenu:hover>ul {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 40px;
+                padding: 10px;
+                background-color: #fff;
+                width: 350px;
+                box-shadow: 0 0 5px 0 rgba(86, 81, 81, 0.489);
+                z-index: 1;
+            }
+
+            #food-banners * {
+                text-align: center;
+                font-style: italic;
+                margin: 0;
+                /* font-size: 20px; */
+            }
+
+            .payment {
+                flex-direction: column;
+                flex-flow: column;
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+
+        }
+
+        .chef {
+            top: 100px;
+            left: 5px;
+            height: 90px;
+        }
+
+        .describe>* {
+            font-size: 15px;
+            color: white;
+        }
+
+        .describe {
+            position: absolute;
+            left: 80px;
+            right: 140px;
+            top: 100px;
+            padding: 0;
+            z-index: 2;
+        }
+
+        .payment {
+            flex-direction: row;
+            flex-flow: row;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+
+        button[type="menu"] {
+            visibility: hidden;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button[type="menu"] {
+            color: #9b480b;
+            background-color: transparent;
+            font-weight: bolder;
+            font-size: 30px;
+            border: none;
+            padding: 0 10px;
+            margin: 0;
+            /* display: none; */
+        }
+
+        marquee div * {
+            border-radius: 100%;
+        }
+
+        marquee div img {
+            border-radius: 100%;
+            border: 4px solid #9b480b;
+        }
+
+        marquee,
+        footer {
+            background-color: #e8aa7e;
+
+        }
+
+        .describe {}
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            margin: 10px 0 0 0;
+        }
+
+        footer * {
+            display: block;
+            margin: 10px auto;
+            text-transform: capitalize;
+        }
+
+        .auto-write {
+            animation-name: autowrite;
+            animation-duration: 3s;
+            animation-timing-function: steps(40, end);
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            /* border-right: 2px solid white; */
+            white-space: nowrap;
+            display: block;
+            overflow: hidden;
+            /* margin: 0 auto; */
+            word-wrap: break-word;
+            word-break: break-all;
+
+        }
+
+        .food_banners {
+            display: none;
+
+        }
+
+        @keyframes autowrite {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 55%;
+                border: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation_menu">
+            <div class="food_banner">
+                <h1>Foodie🌮</h1>
+                <h3>serving tasty foods</h3>
+            </div>
+            <div class="navmenu">
+
+                <ul>
+                    <div class="food_banners" id="food-banners">
+                        <h1>Foodie🌮</h1>
+                        <h4>serving tasty foods</h4>
+                    </div>
+                    <li><a href="google.com">restuarants</a></li>
+                    <li><a href="#">deliveries</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+                <button type="menu" id="hamburger">&equiv;</button>
+            </div>
+            <form>
+                <input type="search" name="" id="search" autofocus placeholder="search food">
+            </form>
+        </div>
+        <div class="chef" style="margin:100px 0 0 5%;">
+            <img src="/image/hychef-removebg-preview.png" alt="chef">
+        </div>
+
+        <div class="describe" style="margin:150px 0 0 14%; color: white;">
+            <h2 class="auto-write" style="font-style: italic; font-size: 19px;">Order food from foodie all around the country</h2>
+            <span class="auto-write" style="animation-delay: 3.5s;">.Tasty 🍟🥪🍖🍤😁😛</span>
+            <span class="auto-write" style="animation-delay: 4.5s;">. Saucy 🧀😋</span>
+            <span class="auto-write" style="animation-delay: 5.5s;">. Delicious 🍞🥠</span>
+            <span class="auto-write" style="animation-delay: 6.5s;">. Yummy 🥟🍠</span>
+            <span class="auto-write" style="animation-delay: 7.5s;">. Crunchy 🥩🍗</span>
+        </div>
+    </header>
+    <main>
+        <h2 style="text-align:center; color: #9b480d; margin: 10px 0;">Latest Recipes:</h2>
+        <marquee behavior="" direction="" scrolldelay="3">
+
+            <div>
+                <section style="display: inline-flex; flex-direction: row; gap: 30px; padding: 15px;">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFikX30Pcj9Hu-f7gax8D18wwVUuPzK_854uZlbGMLpTjtN418Pyg_sJg0u-kPZGiOIrQ&usqp=CAU"
+                            alt="">
+                        <p>Pan Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnod5cmBHdt5n9L0GxAYo_ZzARP7isIzGxeQ&usqp=CAU"
+                            alt="">
+                        <p>Cup Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Pizza</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb4SS5bHX6uJSXyy-z3zQMpL-vFJstTMJTwA&usqp=CAU"
+                            alt="">
+                        <p>Rice</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Melon Soup</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cup Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cake</p>
+                    </div>
+                    <div>
+                        <img src="/image/mixed-fruit.jpeg" alt="">
+                        <p>Mixed Fruit</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHpSw1QjsdZoXx2BKApWyK1vXMKdkdNHnPA&usqp=CAU"
+                            alt="">
+                        <p>Burger</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cake</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS_cxYXR4WEM_PD_WFOEAnBNcpO5bfh9TyA&usqp=CAU"
+                            alt="">
+                        <p>Cake</p>
+                    </div>
+                </section>
+        </marquee>
+        </div>
+        <div class="search_result_container food_list">
+            <div class="food_banner">
+                <h1>Foodie🌮</h1>
+                <h3>search results found {number of data found}</h3>
+            </div>
+            <section class="search_container">
+            </section>
+        </div>
+
+        <div class="food_container">
+
+        </div>
+    </main>
+    <footer>
+        <div style="display:flex; align-items:center; justify-content:space-around; text-align:center;">
+            <img src="image/hychef-removebg-preview.png" alt="" srcset="" style="top: auto; left: 10px; height: 100px; width: 55px; bottom: 0;position: relative;
+            margin:0 0 0 0;">
+            <div>
+                <a href="">twitter</a>
+                <a href="">facebook</a>
+                <a href="">instagram</a>
+                <a href="">telgram</a>
+                <a href="">location</a>
+            </div>
+            <div>
+                <p>restuarants</p>
+                <p>business</p>
+                <p>shopping cart</p>
+                <p>destribution</p>
+                <p>branch</p>
+            </div>
+            <div>
+                <a href="tel:+2345678900">telephone</a>
+                <a href="mailto:">Email Address</a>
+                <p>support</p>
+                <p>customer</p>
+                <p>career</p>
+            </div>
+
+        </div>
+        <address>
+            <p>24 broadway, tennesse united states</p>
+            <p>lagos, nigeria, western africa</p>
+        </address>
+        <p>&COPY; 2020 copyright</p>
+        <span>All Right Reserved</span>
+    </footer>
+    <script src="script.js"></script>
+    <script src="body.js"></script>
+</body>
+
+</html>

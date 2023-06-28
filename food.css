@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    user-select: none;
+}
+
+data::before {
+    content: attr(value);
+}
+
+p {
+    margin: 5px auto;
+    text-transform: capitalize;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(103, 50, 12);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+img {
+    image-rendering: optimizeQuality;
+    image-orientation: from-image;
+    image-resolution: auto;
+    object-position: center;
+    object-fit: cover;
+    /* background-color: #555; */
+    width: 100%;
+    height: 200px;
+}
+
+[type="search"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #555;
+    border-radius: 100px;
+    background-image: url(search.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 35px;
+}
+
+[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background-size: 20px 20px;
+    padding-left: 35px;
+    display: block;
+    margin: auto;
+    margin: 4px auto;
+    color: rgb(103, 50, 12);
+}
+
+[type="submit"] {
+    height: 35px;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background-color: rgb(128, 77, 77);
+    color: #efefef;
+}
+
+header {
+    background-image: url("https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg?w=996&t=st=1668175605~exp=1668176205~hmac=5895bf4637f222074d3bcebe0139fe5c6c63894db009a9118104663fef73535c");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+    width: 100%;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+    /* filter: brightness(0.7); */
+}
+
+.navigation_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    background-color: white;
+}
+
+/* h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+} */
+.payment {
+    background-color: rgb(103, 50, 12);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-flow: row;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+section {
+    text-align: center;
+    margin: auto;
+}
+
+.chef {
+    height: 100%;
+    width: fit-content;
+    position: absolute;
+    margin: 10px 0 0 10%;
+}
+
+h1,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: monospace;
+    font-style: italic;
+}
+
+main>div {
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: inline;
+}
+
+li {
+    display: inline;
+    font-size: 17px;
+    margin: auto 10px;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(113, 62, 26);
+}
+
+a:hover {
+    color: rgb(146, 71, 17);
+}
+
+h1 {
+    color: rgb(103, 50, 12);
+}
+
+span {
+    /* display: block; */
+    text-indent: 20px;
+    font-weight: bolder;
+}
+
+#search {
+    float: right;
+}
+
+.search_result_container {
+    display: none;
+    background-color: rgb(241, 241, 241);
+    position: fixed;
+    top: 74px;
+    bottom: 0;
+    padding: 10px;
+    right: 0;
+    left: auto;
+    width: 400px;
+    max-width: 500px;
+    box-shadow: 0px 0px 5px 0px black;
+    overflow: scroll;
+}
+
+.search_items {
+    background-color: rgb(168, 75, 9);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+    color: #efefef;
+}
+
+.search_container {
+    margin: 20px;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}

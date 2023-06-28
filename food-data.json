@@ -1,0 +1,130 @@
+{
+    "jollofrice": {
+        "food": "sweet Jellof rice",
+        "price": "200",
+        "chef": "joshua",
+        "Description": "Saucy",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/side-view-pilaf-with-stewed-beef-meat-plate_141793-5057.jpg?w=996&t=st=1668169000~exp=1668169600~hmac=46036da7e45747bdf82f4ef5be5f2f528d3cba32379cbd5a50e2eda3a36c32ba"      
+    },
+    "pancake": {
+        "food": "Delicious Pancake😍🤪",
+        "price": "2000",
+        "chef": "Joshua",
+        "Description": "So tasty and nourishing",
+        "location": "Agbor",
+        "image": "https://img.freepik.com/free-photo/side-view-pilaf-with-stewed-beef-meat-plate_141793-5057.jpg?w=996&t=st=1668169000~exp=1668169600~hmac=46036da7e45747bdf82f4ef5be5f2f528d3cba32379cbd5a50e2eda3a36c32ba"      
+    },
+    "Hot Sauce": {
+        "food": "Hot Sauce😍🤪",
+        "price": "2000",
+        "chef": "Joshua",
+        "Description": "So tasty and nourishing",
+        "location": "Agbor",
+        "image": "https://img.freepik.com/free-photo/side-view-pilaf-with-stewed-beef-meat-plate_141793-5057.jpg?w=996&t=st=1668169000~exp=1668169600~hmac=46036da7e45747bdf82f4ef5be5f2f528d3cba32379cbd5a50e2eda3a36c32ba"      
+    },
+    "melonsoup": {
+        "food": "Melon soup with goat meat",
+        "price": "500",
+        "chef": "nonso",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://ng.dailyadvent.com/wp-content/uploads/2018/12/egusi.jpg"
+    },
+    "melon soup": {
+        "food": "Melon soup with goat meat",
+        "price": "500",
+        "chef": "nonso",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://ng.dailyadvent.com/wp-content/uploads/2018/12/egusi.jpg"
+    },
+    "pizza": {
+        "food": "Pizza",
+        "price": "5605",
+        "chef": "walker",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/delicious-pizza-isolated-white_53876-138507.jpg?w=826&t=st=1668193655~exp=1668194255~hmac=e675e96408be7fb0e268e2a5156d1500a28fd95195c23c0033d824cc3f828fe9"
+    },
+    "delicious pizza": {
+        "food": "Pizza",
+        "price": "5605",
+        "chef": "walker",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/delicious-pizza-isolated-white_53876-138507.jpg?w=826&t=st=1668193655~exp=1668194255~hmac=e675e96408be7fb0e268e2a5156d1500a28fd95195c23c0033d824cc3f828fe9"
+    },
+    "ice cream": {
+        "food": "Ice Cream",
+        "price": "2000",
+        "chef": "walker",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/delicious-pizza-isolated-white_53876-138507.jpg?w=826&t=st=1668193655~exp=1668194255~hmac=e675e96408be7fb0e268e2a5156d1500a28fd95195c23c0033d824cc3f828fe9"
+    },
+    "cup cake": {
+        "food": "Cup Cake",
+        "price": "1000",
+        "chef": "walker",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/delicious-pizza-isolated-white_53876-138507.jpg?w=826&t=st=1668193655~exp=1668194255~hmac=e675e96408be7fb0e268e2a5156d1500a28fd95195c23c0033d824cc3f828fe9"
+    },
+    "hotdog": {
+        "food":"Hot Dog",
+        "price": "56272",
+        "chef": "porter",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/gourmet-grilled-all-beef-hot-dog-with-sides-chips-delicious-simple-hot-dogs-with-mustard-pepper-onion-nachos-hot-dogs-fully-loaded-with-assorted-toppings-paddle-board_1150-44657.jpg?w=996&t=st=1668169725~exp=1668170325~hmac=27b14cab582ddd3cd499906e3e94a7bce3e4741002027439ad8cb85d85739453"
+    },
+    "hot dog": {
+        "food":"Hot Dog",
+        "price": "56272",
+        "chef": "porter",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/gourmet-grilled-all-beef-hot-dog-with-sides-chips-delicious-simple-hot-dogs-with-mustard-pepper-onion-nachos-hot-dogs-fully-loaded-with-assorted-toppings-paddle-board_1150-44657.jpg?w=996&t=st=1668169725~exp=1668170325~hmac=27b14cab582ddd3cd499906e3e94a7bce3e4741002027439ad8cb85d85739453"
+    },
+    "cake": {
+        "food": "tasty cake",
+        "price": "545252",
+        "chef": "ray",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/white-cake-poured-with-chocolate-decorated-with-oreo-tofifi-cookies_140725-9934.jpg?w=740&t=st=1668168388~exp=1668168988~hmac=76a53c1a64dc07726baf60061d882935288afa381314ec2afc2b1cdf1d14a05e"
+    },
+    "Fried Rice": {
+        "food": "Fried Rice",
+        "price": "3500",
+        "chef": "Joshua",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScwbxq-bv7BRDou6L3Y0GGHsHnCe5F_5jfng&usqp=CAU"
+    },
+    "Burger": {
+        "food": "Tasty Burger",
+        "price": "6000",
+        "chef": "Ray",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvzg-HoIDaAED4WcwA6F-AX_tFxYMsNMzMjQ&usqp=CAU"
+    },
+    "Mixed Fruit": {
+        "food": "Mixed Fruit",
+        "price": "1200",
+        "chef": "ray",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/white-cake-poured-with-chocolate-decorated-with-oreo-tofifi-cookies_140725-9934.jpg?w=740&t=st=1668168388~exp=1668168988~hmac=76a53c1a64dc07726baf60061d882935288afa381314ec2afc2b1cdf1d14a05e"
+    },
+    "sweet cake": {
+        "food": "tasty cake",
+        "price": "3000",
+        "chef": "ray",
+        "description": "So tasty and nourishing",
+        "location": "Asaba",
+        "image": "https://img.freepik.com/free-photo/white-cake-poured-with-chocolate-decorated-with-oreo-tofifi-cookies_140725-9934.jpg?w=740&t=st=1668168388~exp=1668168988~hmac=76a53c1a64dc07726baf60061d882935288afa381314ec2afc2b1cdf1d14a05e"
+    }
+}
